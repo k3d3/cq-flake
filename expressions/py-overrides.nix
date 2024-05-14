@@ -43,4 +43,6 @@
   };
 
   svgpathtools = self.callPackage ./svgpathtools.nix {};
+
+  ocpsvg = self.callPackage ./ocpsvg.nix {};
 }
