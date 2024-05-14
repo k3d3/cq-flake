@@ -54,4 +54,9 @@
   ezdxf = self.callPackage ./ezdxf.nix {};
 
   build123d = self.callPackage ./build123d.nix {};
+
+  # TODO: (erooke) this is packaged in nixpkgs now, updating nixpkgs broke
+  # things and I wasnt in the mood to fix them so we just yoinked their
+  # definitions. This should probably be removed at some point...
+  pygltflib = self.callPackage ./pygltflib.nix {};
 }
