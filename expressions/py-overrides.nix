@@ -52,4 +52,6 @@
   trianglesolver = self.callPackage ./trianglesolver.nix {};
 
   ezdxf = self.callPackage ./ezdxf.nix {};
+
+  build123d = self.callPackage ./build123d.nix {};
 }
