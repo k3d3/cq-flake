@@ -59,4 +59,6 @@
   # things and I wasnt in the mood to fix them so we just yoinked their
   # definitions. This should probably be removed at some point...
   pygltflib = self.callPackage ./pygltflib.nix {};
+
+  yacv-server = self.callPackage ./yacv-server.nix {};
 }
