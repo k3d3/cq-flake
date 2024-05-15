@@ -41,4 +41,6 @@
   pybind11-stubgen = self.callPackage ./OCP/pybind11-stubgen.nix {
     src = pybind11-stubgen-src;
   };
+
+  svgpathtools = self.callPackage ./svgpathtools.nix {};
 }
