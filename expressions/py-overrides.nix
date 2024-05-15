@@ -45,4 +45,6 @@
   svgpathtools = self.callPackage ./svgpathtools.nix {};
 
   ocpsvg = self.callPackage ./ocpsvg.nix {};
+
+  py-lib3mf = self.callPackage ./py-lib3mf.nix {inherit lib3mf;};
 }
