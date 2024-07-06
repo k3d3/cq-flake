@@ -16,6 +16,7 @@ mkDerivationWith python3Packages.buildPythonApplication {
 
   propagatedBuildInputs = with python3Packages; [
     cadquery
+    build123d
     logbook
     nlopt
     pyqt5
