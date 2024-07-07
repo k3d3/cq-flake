@@ -52,6 +52,23 @@
         "type": "github"
       }
     },
+    "jq-editor-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717595157,
+        "narHash": "sha256-91QVHlz8+1KwVz4RCkzJ5k3yJdoCVS1QyWZDbUkIvU8=",
+        "owner": "jdegenstein",
+        "repo": "jmwright-CQ-Editor",
+        "rev": "5fdeda5076a83d404fb91c99506f35c59b16bf9b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jdegenstein",
+        "repo": "jmwright-CQ-Editor",
+        "rev": "5fdeda5076a83d404fb91c99506f35c59b16bf9b",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1703013332,
@@ -138,6 +155,7 @@
         "cadquery-src": "cadquery-src",
         "cq-editor-src": "cq-editor-src",
         "flake-utils": "flake-utils",
+        "jq-editor-src": "jq-editor-src",
         "nixpkgs": "nixpkgs",
         "ocp-src": "ocp-src",
         "ocp-stubs-src": "ocp-stubs-src",

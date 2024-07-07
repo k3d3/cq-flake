@@ -8,7 +8,7 @@
   };
 
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/nixos-unstable;
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     cadquery-src = {
       url = "github:CadQuery/cadquery/245b6f39e597d324cbe8652b385a2130cdce545b";
@@ -16,6 +16,10 @@
     };
     cq-editor-src = {
       url = "github:CadQuery/CQ-editor/4ef178af06d24a53fee87d576f8cada14c0111a3";
+      flake = false;
+    };
+    jq-editor-src = {
+      url = "github:jdegenstein/jmwright-CQ-Editor/5fdeda5076a83d404fb91c99506f35c59b16bf9b";
       flake = false;
     };
     ocp-src = {
@@ -81,7 +85,8 @@
 
             cq-editor = pkgs.libsForQt5.callPackage ./expressions/cq-editor.nix {
               python3Packages = python.pkgs // { inherit cq-kit cq-warehouse; };
-              src = inputs.cq-editor-src;
+              # src = inputs.cq-editor-src;
+              src = inputs.jq-editor-src;
             };
           };
 
